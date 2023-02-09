@@ -18,10 +18,10 @@ def pair(x):
 print(pair(13))
 
 
-def dobble(x):
+def double(x):
     return f'{x * 2}  {x*3}  {x*4}'
 
-print(dobble(3))
+print(double(3))
 
 
 d1 = {
