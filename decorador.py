@@ -1,10 +1,10 @@
 def decorator(func):
-    def iner(*args, **kwargs):
+    def inner(*args, **kwargs):
         for arg in args:
             is_string(arg)
         resultado = func(*args, **kwargs)
         return resultado
-    return iner
+    return inner
 
 def reverse_string(string):
     return string[::-1]
@@ -19,12 +19,12 @@ print(reverse)
 
 
 def decorator_two(func):
-    def iner(*args, **kwargs):
+    def inner(*args, **kwargs):
         for arg in args:
             is_string_two(arg)
         resultado = func(*args, **kwargs)
         return resultado
-    return iner
+    return inner
 
 @decorator_two
 def reverse_string_two(string):
